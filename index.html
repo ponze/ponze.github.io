@@ -1,223 +1,183 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  <title>ponze</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="ponze">
-<meta property="og:url" content="http://www.ponze.top/index.html">
-<meta property="og:site_name" content="ponze">
-<meta property="og:locale" content="zh-CH">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ponze">
-  
-    <link rel="alternate" href="/atom.xml" title="ponze" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
 
+ <!DOCTYPE HTML>
+<html lang="zh-CH">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>ponze</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="author" content="ponze">
+    
+    
+    
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/pacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/pacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">ponze</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">个人博客</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://www.ponze.top"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.svg" alt="ponze" title="ponze"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="ponze">ponze</a></h1>
+				<h2 class="blog-motto">个人博客</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+					<li>
+					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:www.ponze.top">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+
+    </header>
+    <div id="container">
+      <div id="main">
+
+  <section class="post" itemscope itemprop="blogPost">
   
-    <article id="post-hexo/hexo&amp;github" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/08/17/hexo/hexo&github/" class="article-date">
-  <time datetime="2017-08-17T09:49:31.000Z" itemprop="datePublished">2017-08-17</time>
-</a>
+    <a href="/2017/08/17/hexo/hexo&github/" title="Hexo与Github(一)" itemprop="url">
+  
+    <h1 itemprop="name">Hexo与Github(一)</h1>
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+     
+           <p itemprop="description" >环境设置1. git&amp;ensp;&amp;ensp;进入git 官网 选择对应下载版本即可
+2. github&amp;ensp;&amp;ensp;进入gitbug 官网，注册gitbub账号，添加ssh。如果有多个github账号，可以通过分配不同的ssh公钥即可。
+一般申请ssh的流程如下：
+查看</p>
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/17/hexo/hexo&github/">Hexo与Github(一)</a>
-    </h1>
-  
-
-      </header>
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="环境设置"><a href="#环境设置" class="headerlink" title="环境设置"></a>环境设置</h2><h4 id="1-git"><a href="#1-git" class="headerlink" title="1. git"></a>1. git</h4><p>&ensp;&ensp;进入<a href="https://github.com" target="_blank" rel="external">git 官网</a> 选择对应下载版本即可<br><img src="http://i2.bvimg.com/606984/18f2d585a6c022b9.jpg" alt="git 官网"></p>
-<h4 id="2-github"><a href="#2-github" class="headerlink" title="2. github"></a>2. github</h4><p>&ensp;&ensp;进入<a href="https://github.com" target="_blank" rel="external">gitbug 官网</a>，注册gitbub账号，添加ssh。<br>如果有多个github账号，可以通过分配不同的ssh公钥即可。</p>
-<h6 id="一般申请ssh的流程如下："><a href="#一般申请ssh的流程如下：" class="headerlink" title="一般申请ssh的流程如下："></a>一般申请ssh的流程如下：</h6><ol>
-<li>查看是否已有ssh密钥：<code>ls -al ~/.ssh</code><br><img src="http://i2.bvimg.com/606984/6f10025e6b9ca3c4.jpg" alt="ssh密钥"></li>
-<li>生成新的ssh密钥：<code>ssh-keygen -t rsa -C &quot;your_email@example.com&quot;</code><br>然后一路enter键就可以。完成后默认会在相应路径下（~/.ssh/）生成id_rsa和id_rsa.pub两个文件，如上图所示。</li>
-<li>将新生成的key添加到ssh-agent里：<code>ssh-add ~/.ssh/id_rsa</code> </li>
-<li>将ssh key 添加到github里面，有喜欢的文本剪辑器打开id_rsa.pub文件复制粘贴就可以，没有也不要紧，直接运行命令复制也可以。<br>mac:<br><code>pbcopy &lt; ~/.ssh/id_rsa.pub</code><br>windows:<br><code>clip &lt; ~/.ssh/id_rsa.pub</code><br>linux:</li>
-<li><code>sudo apt-get install xclip</code></li>
-<li><code>xclip -sel clip &lt; ~/.ssh/id_rsa.pub</code><h6 id="特殊情况："><a href="#特殊情况：" class="headerlink" title="特殊情况："></a>特殊情况：</h6>下面是有两个github的情况，如果没有可以直接跳过。<br>如在查看是否已有ssh密钥的步骤所示图中显示，我的下面仍会包含其他的<code>id_rsa_github2</code> 和 <code>id_rsa_github2.pub</code>文件。当然这两个名字是可以自己命名的。</li>
-<li>首先我们需要重新生成一个新的ssh且不能覆盖之前的ssh文件,<br><code>ssh-keygen -t rsa_github2 -C &quot;your_email@example.com</code><br>其中<code>rsa_github2</code>就是自己ssh生成文件的名字，对应会生成<code>id_rsa_github2</code> 和 <code>id_rsa_github2.pub</code>文件。</li>
-<li>然后我们需要把生成的该文件加入到ssh-agent里。<code>ssh-add ~/.ssh/id_rsa_github2</code></li>
-<li>然后再.ssh里面新建config文件，内如如下：<br><img src="http://i2.bvimg.com/606984/62cba973a9bd846b.jpg" alt="config图示"><br>其中<code>Host myhost github.com2</code>为自己命名的规则，如以后访问使用第二个生成的密钥访问的时候就需要在git@后面使用<code>github.com2</code>了，如我自己的<code>git@github.com2:ponze/ponze.github.io.git</code></li>
-</ol>
-<h6 id="测试是否连接成功："><a href="#测试是否连接成功：" class="headerlink" title="测试是否连接成功："></a>测试是否连接成功：</h6><p>当我们把ssh copy到github上的时候就可以进行测试是否正常连接了。<br>比如我们测试生成的两个ssh连接：<br><img src="http://i2.bvimg.com/606984/6023ec359249b72d.jpg" alt="ssh测试连接"><br>如和上图一样，则表示正常。</p>
-<h4 id="3-nodeJs"><a href="#3-nodeJs" class="headerlink" title="3. nodeJs"></a>3. nodeJs</h4><p>&ensp;&ensp;进入<a href="https://nodejs.org/en/" target="_blank" rel="external">nodeJs 官网</a>，对应版本进行下载。<br><img src="http://i1.bvimg.com/606984/a266fd4409dd2e40.jpg" alt="nodeJs官网图示"></p>
-<h4 id="4-配置hexo"><a href="#4-配置hexo" class="headerlink" title="4. 配置hexo"></a>4. 配置hexo</h4><p>进入<a href="https://hexo.io/docs/" target="_blank" rel="external">hexo 官网</a>,有详细的说明。</p>
-<ol>
-<li>下载 hexo: <code>npm install -g hexo-cli</code></li>
-<li>初始化:</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># cd 到你要建立博客的目录，执行下面命令，&lt;folder&gt;为文件夹的名称，任意命名。</div><div class="line">$ hexo init &lt;folder&gt;</div><div class="line"># 运行完后会生成 你所命名的文件夹，cd 进去</div><div class="line">$ cd &lt;folder&gt;</div><div class="line"># 安装npm 为 node.js的命令，会安装对应依赖包</div><div class="line">$ npm install</div></pre></td></tr></table></figure>
-<p>初始化过后，你的folder下面就有下面文件：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">├──_config.yml</div><div class="line">├──package.json</div><div class="line">├──脚手架</div><div class="line">├──来源</div><div class="line">| ├──_drafts</div><div class="line">| └──_posts</div><div class="line">└──主题</div></pre></td></tr></table></figure></p>
-<p><code>_config.yml</code> 为网页的配置文件。<br>打开该文件，对应各自有注释，所以一应俱全。<br>现在挑几个比较重要的地方赘述一下。<br><img src="http://i2.bvimg.com/606984/8870216231efe6c4.jpg" alt="site url"><br><img src="http://i2.bvimg.com/606984/15dd547c88c188a7.jpg" alt="deploy"></p>
-<h2 id="hexo-常用命令："><a href="#hexo-常用命令：" class="headerlink" title="hexo 常用命令："></a>hexo 常用命令：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">npm install hexo -g #安装  </div><div class="line">npm update hexo -g #升级  </div><div class="line">hexo init #初始化</div><div class="line"></div><div class="line">hexo n &quot;我的博客&quot; == hexo new &quot;我的博客&quot; #新建文章</div><div class="line">hexo p == hexo publish # 发布</div><div class="line">hexo clean # Clean 工程</div><div class="line">hexo g == hexo generate# 生成</div><div class="line">hexo s == hexo server # 启动服务预览 浏览器输入 http://localhost:4000/ 预览</div><div class="line">hexo d == hexo deploy# 部署，上传到github对应的分支</div></pre></td></tr></table></figure>
-<h2 id="git-常用命令：摘自-思考的足迹"><a href="#git-常用命令：摘自-思考的足迹" class="headerlink" title="git 常用命令：摘自 思考的足迹"></a>git 常用命令：<a href="http://www.cnblogs.com/cspku/articles/Git_cmds.html" target="_blank" rel="external">摘自 思考的足迹</a></h2><h6 id="查看、添加、提交、删除、找回，重置修改文件"><a href="#查看、添加、提交、删除、找回，重置修改文件" class="headerlink" title="查看、添加、提交、删除、找回，重置修改文件"></a>查看、添加、提交、删除、找回，重置修改文件</h6><p>git add <file> # 将工作文件修改提交到本地暂存区<br>git add . # 将所有修改过的工作文件提交暂存区<br>git co – <file> # 抛弃工作区修改<br>git co . # 抛弃工作区修改<br>git rm <file> # 从版本库中删除文件<br>git rm <file> –cached # 从版本库中删除文件，但不删除文件<br>git reset <file> # 从暂存区恢复到工作文件<br>git reset – . # 从暂存区恢复到工作文件<br>git reset –hard # 恢复最近一次提交过的状态，即放弃上次提交后的所有本次修改<br>git ci –amend # 修改最后一次提交记录<br>git revert &lt;$id&gt; # 恢复某次提交的状态，恢复动作本身也创建次提交对象<br>git revert HEAD # 恢复最后一次提交的状态</file></file></file></file></file></p>
-<h6 id="查看文件diff"><a href="#查看文件diff" class="headerlink" title="查看文件diff"></a>查看文件diff</h6><p>git diff <file> # 比较当前文件和暂存区文件差异 git diff<br>git diff <id1><id1><id2> # 比较两次提交之间的差异<br>git diff <branch1>..<branch2> # 在两个分支之间比较<br>git diff –staged # 比较暂存区和版本库差异<br>git diff –cached # 比较暂存区和版本库差异</branch2></branch1></id2></id1></id1></file></p>
-<h6 id="查看、切换、创建和删除分支"><a href="#查看、切换、创建和删除分支" class="headerlink" title="查看、切换、创建和删除分支"></a>查看、切换、创建和删除分支</h6><p>git br -r # 查看远程分支<br>git br <new_branch> # 创建新的分支<br>git br -v # 查看各个分支最后提交信息<br>git br –merged # 查看已经被合并到当前分支的分支<br>git br –no-merged # 查看尚未被合并到当前分支的分支<br>git co <branch> # 切换到某个分支<br>git co -b <new_branch> # 创建新的分支，并且切换过去<br>git co -b <new_branch> <branch> # 基于branch创建新的new_branch<br>git co $id # 把某次历史提交记录checkout出来，但无分支信息，切换到其他分支会自动删除<br>git co $id -b <new_branch> # 把某次历史提交记录checkout出来，创建成一个分支<br>git br -d <branch> # 删除某个分支<br>git br -D <branch> # 强制删除某个分支 (未被合并的分支被删除的时候需要强制)</branch></branch></new_branch></branch></new_branch></new_branch></branch></new_branch></p>
-<h6 id="Git远程分支管理"><a href="#Git远程分支管理" class="headerlink" title="Git远程分支管理"></a>Git远程分支管理</h6><p>git pull # 抓取远程仓库所有分支更新并合并到本地<br>git pull –no-ff # 抓取远程仓库所有分支更新并合并到本地，不要快进合并<br>git fetch origin # 抓取远程仓库更新<br>git merge origin/master # 将远程主分支合并到本地当前分支<br>git co –track origin/branch # 跟踪某个远程分支创建相应的本地分支<br>git co -b <local_branch> origin/<remote_branch> # 基于远程分支创建本地分支，功能同上<br>git push # push所有分支<br>git push origin master # 将本地主分支推到远程主分支<br>git push -u origin master # 将本地主分支推到远程(如无远程主分支则创建，用于初始化远程仓库)<br>git push origin <local_branch> # 创建远程分支， origin是远程仓库名<br>git push origin <local_branch>:<remote_branch> # 创建远程分支<br>git push origin :<remote_branch> #先删除本地分支(git br -d <branch>)，然后再push删除远程分支</branch></remote_branch></remote_branch></local_branch></local_branch></remote_branch></local_branch></p>
-<h6 id="Git远程仓库管理"><a href="#Git远程仓库管理" class="headerlink" title="Git远程仓库管理"></a>Git远程仓库管理</h6><p>git remote -v # 查看远程服务器地址和仓库名称<br>git remote show origin # 查看远程服务器仓库状态<br>git remote add origin git@ github:robbin/robbin_site.git # 添加远程仓库地址<br>git remote set-url origin git@ github.com:robbin/robbin_site.git # 设置远程仓库地(用于修改远程仓库地址)<br>git remote rm <repository> # 删除远程仓库</repository></p>
-<h6 id="创建远程仓库"><a href="#创建远程仓库" class="headerlink" title="创建远程仓库"></a>创建远程仓库</h6><p>git clone –bare robbin_site robbin_site.git # 用带版本的项目创建纯版本仓库<br>scp -r my_project.git git@ git.csdn.net:~ # 将纯仓库上传到服务器上<br>mkdir robbin_site.git &amp;&amp; cd robbin_site.git &amp;&amp; git –bare init # 在服务器创建纯仓库<br>git remote add origin git@ github.com:robbin/robbin_site.git # 设置远程仓库地址<br>git push -u origin master # 客户端首次提交<br>git push -u origin develop # 首次将本地develop分支提交到远程develop分支，并且track<br>git remote set-head origin master # 设置远程仓库的HEAD指向master分支，也可以命令设置跟踪远程库和本地库<br>git branch –set-upstream master origin/master<br>git branch –set-upstream develop origin/develop</p>
-<h2 id="git-与-hexo"><a href="#git-与-hexo" class="headerlink" title="git 与 hexo"></a>git 与 hexo</h2><p>现在目前是利用hexo deploy 部署，往github上推，但是重要的是如果你自己额外添加的其他文件不会被push上去，所以你需要使用git。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">cd &lt;folder&gt; cd 到你之前的博客所在的文件夹中</div><div class="line">git init # 初始化git</div><div class="line">git remote add origin git@github.com2:ponze/ponze.github.io.git # 添加git远程库</div><div class="line">剩下的就是add commit pull push 等等操作。</div></pre></td></tr></table></figure></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.ponze.top/2017/08/17/hexo/hexo&github/" data-id="cj6hjy7d800012gx1s3udkqku" class="article-share-link">Partager</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo-github-blog-博客-静态博客-快速搭建/">hexo,github,blog,博客,静态博客,快速搭建</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
+    <time datetime="2017-08-17T09:49:31.000Z" itemprop="datePublished">2017-08-17</time>
+  </a>
 </section>
-        
-          <aside id="sidebar">
-  
-    
+
+
+</div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
 
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Mot-clés</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo-github-blog-博客-静态博客-快速搭建/">hexo,github,blog,博客,静态博客,快速搭建</a></li></ul>
-    </div>
-  </div>
-
 
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Nuage de mot-clés</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/hexo-github-blog-博客-静态博客-快速搭建/" style="font-size: 10px;">hexo,github,blog,博客,静态博客,快速搭建</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li></ul>
-    </div>
-  </div>
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/hexo-github-blog-博客-静态博客-快速搭建/" title="hexo,github,blog,博客,静态博客,快速搭建">hexo,github,blog,博客,静态博客,快速搭建<sup>1</sup></a></li>
+		
+		</ul>
+</div>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2017/08/17/hexo/hexo&github/">Hexo与Github(一)</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+  <div class="rsspart">
+	<a href="" target="_blank" title="rss">RSS 订阅</a>
+</div>
 
-  
 </aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2017 ponze<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+</div>
     </div>
-  </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<div class="social-font clearfix">
+		
+		
+		
+		
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2017 
+		
+		<a href="http://www.ponze.top" target="_blank" title="ponze">ponze</a>
+		
+		</p>
+</div>
 </footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
+    <script src="/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="/js/script.js"></script>
 
-  </div>
-</body>
-</html>
+
+  </body>
+ </html>

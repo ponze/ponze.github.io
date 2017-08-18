@@ -1,105 +1,94 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  <title>Hexo与Github(一) | ponze</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="环境设置1. git&amp;ensp;&amp;ensp;进入git 官网 选择对应下载版本即可 2. github&amp;ensp;&amp;ensp;进入gitbug 官网，注册gitbub账号，添加ssh。如果有多个github账号，可以通过分配不同的ssh公钥即可。 一般申请ssh的流程如下： 查看是否已有ssh密钥：ls -al ~/.ssh 生成新的ssh密钥：ssh-keygen -t rsa -C &amp;quot">
-<meta name="keywords" content="hexo,github,blog,博客,静态博客,快速搭建">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hexo与Github(一)">
-<meta property="og:url" content="http://www.ponze.top/2017/08/17/hexo/hexo&github/index.html">
-<meta property="og:site_name" content="ponze">
-<meta property="og:description" content="环境设置1. git&amp;ensp;&amp;ensp;进入git 官网 选择对应下载版本即可 2. github&amp;ensp;&amp;ensp;进入gitbug 官网，注册gitbub账号，添加ssh。如果有多个github账号，可以通过分配不同的ssh公钥即可。 一般申请ssh的流程如下： 查看是否已有ssh密钥：ls -al ~/.ssh 生成新的ssh密钥：ssh-keygen -t rsa -C &amp;quot">
-<meta property="og:locale" content="zh-CH">
-<meta property="og:image" content="http://i2.bvimg.com/606984/18f2d585a6c022b9.jpg">
-<meta property="og:image" content="http://i2.bvimg.com/606984/6f10025e6b9ca3c4.jpg">
-<meta property="og:image" content="http://i2.bvimg.com/606984/62cba973a9bd846b.jpg">
-<meta property="og:image" content="http://i2.bvimg.com/606984/6023ec359249b72d.jpg">
-<meta property="og:image" content="http://i1.bvimg.com/606984/a266fd4409dd2e40.jpg">
-<meta property="og:image" content="http://i2.bvimg.com/606984/8870216231efe6c4.jpg">
-<meta property="og:image" content="http://i2.bvimg.com/606984/15dd547c88c188a7.jpg">
-<meta property="og:updated_time" content="2017-08-18T05:22:40.000Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo与Github(一)">
-<meta name="twitter:description" content="环境设置1. git&amp;ensp;&amp;ensp;进入git 官网 选择对应下载版本即可 2. github&amp;ensp;&amp;ensp;进入gitbug 官网，注册gitbub账号，添加ssh。如果有多个github账号，可以通过分配不同的ssh公钥即可。 一般申请ssh的流程如下： 查看是否已有ssh密钥：ls -al ~/.ssh 生成新的ssh密钥：ssh-keygen -t rsa -C &amp;quot">
-<meta name="twitter:image" content="http://i2.bvimg.com/606984/18f2d585a6c022b9.jpg">
-  
-    <link rel="alternate" href="/atom.xml" title="ponze" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
 
+ <!DOCTYPE HTML>
+<html lang="zh-CH">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>Hexo与Github(一) | ponze</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="author" content="ponze">
+    
+    <meta name="description" content="环境设置1. git&amp;ensp;&amp;ensp;进入git 官网 选择对应下载版本即可
+2. github&amp;ensp;&amp;ensp;进入gitbug 官网，注册gitbub账号，添加ssh。如果有多个github账号，可以通过分配不同的ssh公钥即可。
+一般申请ssh的流程如下：
+查看是否已有ssh密钥：">
+    
+    
+    
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/pacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/pacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">ponze</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">个人博客</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://www.ponze.top"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-hexo/hexo&amp;github" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/08/17/hexo/hexo&github/" class="article-date">
-  <time datetime="2017-08-17T09:49:31.000Z" itemprop="datePublished">2017-08-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      Hexo与Github(一)
-    </h1>
-  
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.svg" alt="ponze" title="ponze"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="ponze">ponze</a></h1>
+				<h2 class="blog-motto">个人博客</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+					<li>
+					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:www.ponze.top">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
 
-      </header>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="环境设置"><a href="#环境设置" class="headerlink" title="环境设置"></a>环境设置</h2><h4 id="1-git"><a href="#1-git" class="headerlink" title="1. git"></a>1. git</h4><p>&ensp;&ensp;进入<a href="https://github.com" target="_blank" rel="external">git 官网</a> 选择对应下载版本即可<br><img src="http://i2.bvimg.com/606984/18f2d585a6c022b9.jpg" alt="git 官网"></p>
+      <a href="/2017/08/17/hexo/hexo&github/" title="Hexo与Github(一)" itemprop="url">Hexo与Github(一)</a>
+  </h1>
+  <p class="article-author">By
+    
+      <a href="http://www.ponze.top" title="ponze">ponze</a>
+    </p>
+  <p class="article-time">
+    <time datetime="2017-08-17T09:49:31.000Z" itemprop="datePublished">2017-08-17</time>
+    更新日期:<time datetime="2017-08-18T07:31:42.000Z" itemprop="dateModified">2017-08-18</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#环境设置"><span class="toc-number">1.</span> <span class="toc-text">环境设置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-git"><span class="toc-number">1.0.1.</span> <span class="toc-text">1. git</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-github"><span class="toc-number">1.0.2.</span> <span class="toc-text">2. github</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#一般申请ssh的流程如下："><span class="toc-number">1.0.2.0.1.</span> <span class="toc-text">一般申请ssh的流程如下：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#特殊情况："><span class="toc-number">1.0.2.0.2.</span> <span class="toc-text">特殊情况：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#测试是否连接成功："><span class="toc-number">1.0.2.0.3.</span> <span class="toc-text">测试是否连接成功：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-nodeJs"><span class="toc-number">1.0.3.</span> <span class="toc-text">3. nodeJs</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-配置hexo"><span class="toc-number">1.0.4.</span> <span class="toc-text">4. 配置hexo</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo-常用命令："><span class="toc-number">2.</span> <span class="toc-text">hexo 常用命令：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git-常用命令：摘自-思考的足迹"><span class="toc-number">3.</span> <span class="toc-text">git 常用命令：摘自 思考的足迹</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#查看、添加、提交、删除、找回，重置修改文件"><span class="toc-number">3.0.0.0.1.</span> <span class="toc-text">查看、添加、提交、删除、找回，重置修改文件</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#查看文件diff"><span class="toc-number">3.0.0.0.2.</span> <span class="toc-text">查看文件diff</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#查看、切换、创建和删除分支"><span class="toc-number">3.0.0.0.3.</span> <span class="toc-text">查看、切换、创建和删除分支</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#Git远程分支管理"><span class="toc-number">3.0.0.0.4.</span> <span class="toc-text">Git远程分支管理</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#Git远程仓库管理"><span class="toc-number">3.0.0.0.5.</span> <span class="toc-text">Git远程仓库管理</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#创建远程仓库"><span class="toc-number">3.0.0.0.6.</span> <span class="toc-text">创建远程仓库</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git-与-hexo"><span class="toc-number">4.</span> <span class="toc-text">git 与 hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Tip"><span class="toc-number">4.0.0.1.</span> <span class="toc-text">Tip</span></a></li></ol></li></ol></li></ol></li></ol>
+		</div>
+		
+		<h2 id="环境设置"><a href="#环境设置" class="headerlink" title="环境设置"></a>环境设置</h2><h4 id="1-git"><a href="#1-git" class="headerlink" title="1. git"></a>1. git</h4><p>&ensp;&ensp;进入<a href="https://github.com" target="_blank" rel="external">git 官网</a> 选择对应下载版本即可<br><img src="http://i2.bvimg.com/606984/18f2d585a6c022b9.jpg" alt="git 官网"></p>
 <h4 id="2-github"><a href="#2-github" class="headerlink" title="2. github"></a>2. github</h4><p>&ensp;&ensp;进入<a href="https://github.com" target="_blank" rel="external">gitbug 官网</a>，注册gitbub账号，添加ssh。<br>如果有多个github账号，可以通过分配不同的ssh公钥即可。</p>
 <h6 id="一般申请ssh的流程如下："><a href="#一般申请ssh的流程如下：" class="headerlink" title="一般申请ssh的流程如下："></a>一般申请ssh的流程如下：</h6><ol>
 <li>查看是否已有ssh密钥：<code>ls -al ~/.ssh</code><br><img src="http://i2.bvimg.com/606984/6f10025e6b9ca3c4.jpg" alt="ssh密钥"></li>
@@ -130,104 +119,198 @@
 <h6 id="Git远程仓库管理"><a href="#Git远程仓库管理" class="headerlink" title="Git远程仓库管理"></a>Git远程仓库管理</h6><p>git remote -v # 查看远程服务器地址和仓库名称<br>git remote show origin # 查看远程服务器仓库状态<br>git remote add origin git@ github:robbin/robbin_site.git # 添加远程仓库地址<br>git remote set-url origin git@ github.com:robbin/robbin_site.git # 设置远程仓库地(用于修改远程仓库地址)<br>git remote rm <repository> # 删除远程仓库</repository></p>
 <h6 id="创建远程仓库"><a href="#创建远程仓库" class="headerlink" title="创建远程仓库"></a>创建远程仓库</h6><p>git clone –bare robbin_site robbin_site.git # 用带版本的项目创建纯版本仓库<br>scp -r my_project.git git@ git.csdn.net:~ # 将纯仓库上传到服务器上<br>mkdir robbin_site.git &amp;&amp; cd robbin_site.git &amp;&amp; git –bare init # 在服务器创建纯仓库<br>git remote add origin git@ github.com:robbin/robbin_site.git # 设置远程仓库地址<br>git push -u origin master # 客户端首次提交<br>git push -u origin develop # 首次将本地develop分支提交到远程develop分支，并且track<br>git remote set-head origin master # 设置远程仓库的HEAD指向master分支，也可以命令设置跟踪远程库和本地库<br>git branch –set-upstream master origin/master<br>git branch –set-upstream develop origin/develop</p>
 <h2 id="git-与-hexo"><a href="#git-与-hexo" class="headerlink" title="git 与 hexo"></a>git 与 hexo</h2><p>现在目前是利用hexo deploy 部署，往github上推，但是重要的是如果你自己额外添加的其他文件不会被push上去，所以你需要使用git。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">cd &lt;folder&gt; cd 到你之前的博客所在的文件夹中</div><div class="line">git init # 初始化git</div><div class="line">git remote add origin git@github.com2:ponze/ponze.github.io.git # 添加git远程库</div><div class="line">剩下的就是add commit pull push 等等操作。</div></pre></td></tr></table></figure></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.ponze.top/2017/08/17/hexo/hexo&github/" data-id="cj6hjy7d800012gx1s3udkqku" class="article-share-link">Partager</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo-github-blog-博客-静态博客-快速搭建/">hexo,github,blog,博客,静态博客,快速搭建</a></li></ul>
-
-    </footer>
-  </div>
+<h5 id="Tip"><a href="#Tip" class="headerlink" title="Tip"></a>Tip</h5><ol>
+<li>CNAME  README都可以放在Source文件夹下，每次上传就不会消失了</li>
+</ol>
   
-    
-  
-</article>
+	</div>
+		<footer class="article-footer clearfix">
 
-</section>
-        
-          <aside id="sidebar">
+  <div class="article-tags">
   
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Mot-clés</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo-github-blog-博客-静态博客-快速搭建/">hexo,github,blog,博客,静态博客,快速搭建</a></li></ul>
-    </div>
+  <span></span> <a href="/tags/hexo-github-blog-博客-静态博客-快速搭建/">hexo,github,blog,博客,静态博客,快速搭建</a>
   </div>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Nuage de mot-clés</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/hexo-github-blog-博客-静态博客-快速搭建/" style="font-size: 10px;">hexo,github,blog,博客,静态博客,快速搭建</a>
-    </div>
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://www.ponze.top/2017/08/17/hexo/hexo&github/" data-title="Hexo与Github(一) | ponze" data-tsina="" class="share clearfix">
   </div>
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li></ul>
-    </div>
+</div>
+</footer>   	       
+	</article>
+	
+	
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#环境设置"><span class="toc-number">1.</span> <span class="toc-text">环境设置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-git"><span class="toc-number">1.0.1.</span> <span class="toc-text">1. git</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-github"><span class="toc-number">1.0.2.</span> <span class="toc-text">2. github</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#一般申请ssh的流程如下："><span class="toc-number">1.0.2.0.1.</span> <span class="toc-text">一般申请ssh的流程如下：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#特殊情况："><span class="toc-number">1.0.2.0.2.</span> <span class="toc-text">特殊情况：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#测试是否连接成功："><span class="toc-number">1.0.2.0.3.</span> <span class="toc-text">测试是否连接成功：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-nodeJs"><span class="toc-number">1.0.3.</span> <span class="toc-text">3. nodeJs</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-配置hexo"><span class="toc-number">1.0.4.</span> <span class="toc-text">4. 配置hexo</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo-常用命令："><span class="toc-number">2.</span> <span class="toc-text">hexo 常用命令：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git-常用命令：摘自-思考的足迹"><span class="toc-number">3.</span> <span class="toc-text">git 常用命令：摘自 思考的足迹</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#查看、添加、提交、删除、找回，重置修改文件"><span class="toc-number">3.0.0.0.1.</span> <span class="toc-text">查看、添加、提交、删除、找回，重置修改文件</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#查看文件diff"><span class="toc-number">3.0.0.0.2.</span> <span class="toc-text">查看文件diff</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#查看、切换、创建和删除分支"><span class="toc-number">3.0.0.0.3.</span> <span class="toc-text">查看、切换、创建和删除分支</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#Git远程分支管理"><span class="toc-number">3.0.0.0.4.</span> <span class="toc-text">Git远程分支管理</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#Git远程仓库管理"><span class="toc-number">3.0.0.0.5.</span> <span class="toc-text">Git远程仓库管理</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#创建远程仓库"><span class="toc-number">3.0.0.0.6.</span> <span class="toc-text">创建远程仓库</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git-与-hexo"><span class="toc-number">4.</span> <span class="toc-text">git 与 hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Tip"><span class="toc-number">4.0.0.1.</span> <span class="toc-text">Tip</span></a></li></ol></li></ol></li></ol></li></ol>
   </div>
 
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
 
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2017/08/17/hexo/hexo&github/">Hexo与Github(一)</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
 
   
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/hexo-github-blog-博客-静态博客-快速搭建/" title="hexo,github,blog,博客,静态博客,快速搭建">hexo,github,blog,博客,静态博客,快速搭建<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  <div class="rsspart">
+	<a href="" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
 </aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2017 ponze<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+</div>
     </div>
-  </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<div class="social-font clearfix">
+		
+		
+		
+		
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2017 
+		
+		<a href="http://www.ponze.top" target="_blank" title="ponze">ponze</a>
+		
+		</p>
+</div>
 </footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
+    <script src="/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
 
 
-<script src="/js/script.js"></script>
 
-  </div>
-</body>
+
+
+
+  </body>
 </html>
